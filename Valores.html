@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MoneyControl</title>
+</head>
+<body>
+    <header>
+        <h1>Controle de Gastos</h1>
+        <h2>Stephanie / Lucas</h2>
+    </header>
+    <section>
+           <form action="validacao.php" method="post" id="dados">
+               <select name="desc" id="descricao" required>
+                    <option value="">Selecione um motivo</option>
+                    <option value="aluguel">aluguel</option>
+                    <option value="água">água</option>
+                    <option value="luz">luz</option>
+                    <option value="diferenca ap">diferença AP</option>
+                    <option value="evolução obra">evolução de obra</option>
+                    <option value="alimentação">alimentação</option>
+                    <option value="internet">internet</option>
+                    <option value="assinaturas">assinaturas</option>
+                    <option value="outros">outros</option>
+               </select>
+               <input type="number" name="valor" id="txtval" placeholder="Digite o valor" required>
+               <textarea name="coment" id="comentario" placeholder="Adicione um comentário"></textarea>
+               
+               <input type="submit" value="Enviar" class="styled-button">
+           </form>
+    </section>
+</body>
+</html>
